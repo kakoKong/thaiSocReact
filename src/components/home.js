@@ -93,7 +93,7 @@ const Home = () => {
                     <Carousel.Caption className={classes.carouselText}>
                     <Typography variant="h3">Activities</Typography>
                     <p>Our past activities, how does it looks, LIT AF!!!</p>
-                    <Button className={classes.button} variant="outlined" size="large">View more</Button>
+                    {/* <Button className={classes.button} variant="outlined" size="large">View more</Button> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={classes.carousel} interval={5000}>
@@ -105,7 +105,9 @@ const Home = () => {
                     <Carousel.Caption className={classes.carouselText}>
                     <Typography variant="h3">Support</Typography>
                     <p>Which flight should you take? How do you transport to your accommodation? Where to buy stuff?</p>
-                    <Button className={classes.button} variant="outlined" size="large">Find more here</Button>
+                    <Link className={classes.link} to="/support">
+                        <Button className={classes.button} variant="outlined" size="large">Find more here</Button>
+                    </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

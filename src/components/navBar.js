@@ -128,7 +128,7 @@ export default function NavBar() {
                     Support
                 </Link>
             </MenuItem>
-            <MenuItem className={classes.item}>
+            {/* <MenuItem className={classes.item}>
                 <Link className={classes.link}>
                     Life
                 </Link>
@@ -137,7 +137,7 @@ export default function NavBar() {
                 <Link className={classes.link}>
                     Events
                 </Link>
-            </MenuItem>
+            </MenuItem> */}
           </div>
         </Toolbar>
       </AppBar>

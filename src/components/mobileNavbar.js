@@ -165,12 +165,12 @@ export default function MobileMenu() {
                 <ListItemText>Support</ListItemText>
                 </ListItem>
             </Link>
-            <Link to="" className={classes.link}>
+            {/* <Link to="" className={classes.link}>
                 <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon><DateRangeIcon /></ListItemIcon>
                 <ListItemText>Events</ListItemText>
                 </ListItem>
-            </Link>
+            </Link> */}
         </List>
       </Drawer>
       </div>
