@@ -12,6 +12,9 @@ import logo from '../assets/logo.jpg'
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+          },
     },
     appBar:{
         backgroundColor: 'transparent',

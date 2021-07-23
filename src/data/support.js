@@ -74,7 +74,7 @@ export const cities = [
         name: 'On Campus',
         description: 'YEHHHH',
         train : {
-            cost: '£20 - £35',
+            cost: '£35+',
             time: '2 hrs - 2 hrs 30 min',
             steps: [
                 {
@@ -99,7 +99,7 @@ export const cities = [
             ]
         },
         bus : {
-            cost: '£12 - £20',
+            cost: '£20+',
             time: '3 hrs 30 mins - 5 hrs',
             steps: [
                 {
@@ -170,8 +170,8 @@ export const cities = [
             ]
         },
         bus : {
-            cost: 'No Bus',
-            time: 'No Bus',
+            cost: 'Not Available',
+            time: 'Not Available',
             steps: [
                 {
                     number: 1,
@@ -211,4 +211,56 @@ export const cities = [
             ]
         },
     }
+]
+
+export const checkList = [
+    {
+        name: 'Passport'
+    },
+    {
+        name: 'Visa'
+    },
+    {
+        name: 'IOM health check'
+    },
+    {
+        name: 'CAS letter'
+    },
+    {
+        name: 'Contact-less Debit/Credit Card'
+    },
+    {
+        name: 'Minimum 200 pounds in cash'
+    },
+    {
+        name: 'cool'
+    },
+]
+
+export const questions = [
+    {
+        q: 'Should I bring my own Pillows/blanket',
+        a: 'Ask your Accom'
+    },
+    {
+        q: 'Are there any part-time job',
+        a: 'Yes, most of the Thai student usually did the part-time job at nearby restaurant'
+    },
+    {
+        q: 'How much money should I prepare per week',
+        a: 'Excluding Accommodation fee, 150 pounds should be more than enough depending on your lifestyle'
+    },
+    {
+        q: 'What is Thai Society',
+        a: 'Read the god-damn description in about page'
+    },
+    {
+        q: 'How many Thai Students are there',
+        a: 'There are around 30 undergraduates and around 70+ postgraduate Thai student'
+    },
+    {
+        q: 'Is the lecture hard?',
+        a: 'Yes, I failed'
+    },
+
 ]

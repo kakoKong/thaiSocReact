@@ -59,6 +59,11 @@ const useStyle = makeStyles((theme) => ({
     divider: {
         height: '20px',
         backgroundColor: theme.palette.primary
+    },
+    subCoverText:{
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+          },
     }
 }))
 
@@ -78,7 +83,7 @@ const About = () => {
                 <img src={coverAbout2} className={classes.coverImg} alt="cover"/>
                 <Typography data-aos="fade-right" className={classes.coverText} variant="h1">
                     About Us
-                    <Typography variant="h4">
+                    <Typography className={classes.subCoverText} variant="h4">
                         Warwick Thai Society
                     </Typography>
                 </Typography>
@@ -139,7 +144,7 @@ const About = () => {
                             </Card>
                     </Grid>
                     {exec.map((member) => (
-                        <Grid item sm={6}>
+                        <Grid item xs={12} sm={6}>
                         <Card data-aos="fade-in" className={classes.cardRoot}>
                             <div className={classes.details}>
                                 <CardContent className={classes.content}>

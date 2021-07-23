@@ -21,12 +21,12 @@ const useStyle = makeStyles((theme) => ({
     popItem: {
         position: 'relative',
         padding: '40px',
-        maxWidth: '640px',
+        maxWidth: '500px',
         backgroundColor: 'inherit',
     },
     img: {
-        height: '500px',
-        width: '500px'
+        height: '400px',
+        width: '400px'
     },
     button: {
         position: 'absolute',

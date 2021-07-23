@@ -7,9 +7,15 @@ import Home from './components/home';
 import About from './components/aboutUs'
 
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles'
+
 import Footer from './components/footer';
 import Popup from './components/popup';
 import Support from './components/support/support';
+import MobileMenu from './components/mobileNavbar';
+import ScrollToTop from './toTheTop';
+
+
 
 const theme = createTheme({
   palette: {
@@ -25,13 +31,16 @@ const theme = createTheme({
   }
 });
 
+
 function App() {
 
   const [buttonPopup, setButtonPopup] = useState(true)
   return (
     <Router>
+      <ScrollToTop />
       <ThemeProvider theme={theme}>
         <NavBar />
+        <MobileMenu />
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}></Route>

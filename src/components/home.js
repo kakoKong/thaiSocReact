@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container, Typography, Paper, Divider } from '@material-ui/core/'
+import { Button, Container, Typography, Paper, Divider, Grid } from '@material-ui/core/'
 import { Timeline, TimelineItem, TimelineSeparator, TimelineOppositeContent, TimelineConnector, TimelineDot, TimelineContent} from '@material-ui/lab'
 import { Repeat } from '@material-ui/icons/';
+import EventIcon from '@material-ui/icons/Event';
 import { Carousel } from 'react-bootstrap';
 
 import cover7 from '../assets/cover7.jpg'
@@ -11,13 +12,21 @@ import coverPhoto from '../assets/coverPhoto.jpg'
 import cover10 from '../assets/cover10.jpg'
 
 import { timeline } from '../data/home.js'
-
+import { newEvent } from '../data/newEvent.js'
+import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles((theme) => ({
     root: {
     },
     section:{
         marginTop: theme.spacing(4)
+    },
+    section2:{
+        marginTop: theme.spacing(4),
+        paddingTop: theme.spacing(2),
+        color: 'white',
+        backgroundColor: 'grey',
+        display: 'none'
     },
     carousel: {
         backgroundColor: 'black',
@@ -42,7 +51,18 @@ const useStyle = makeStyles((theme) => ({
     divider: {
         color: 'pink',
         border: '3px solid pink'
-    }
+    },
+    eventImg: {
+        maxWidth: 400,
+        margin: 'auto'
+    },
+    link: {
+        textDecoration: 'inherit',
+        color: 'inherit',
+        "&:hover": {
+            color: 'grey'
+        }
+    },
 }))
 
 const Home = () => {
@@ -62,7 +82,6 @@ const Home = () => {
                     <Carousel.Caption className={classes.carouselText}> 
                     <Typography variant="h3">Warwick Thai Society</Typography>
                     <p>We bond, we drink, we dead</p>
-                    <Button className={classes.button} variant="outlined" size="large">View more</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={classes.carousel} interval={5000}>
@@ -90,6 +109,7 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+
             <Container className={classes.section} maxWidth="md">
                 <Typography variant="h3" align="left" gutterBottom>
                     About Us
@@ -105,11 +125,42 @@ const Home = () => {
                 ทยาลัยWarwick ซึ่งตั้งอยู่ในเมือง Coventry, สหราชอาณา
                 จักร ในระหว่างปีการศึกษา พวกเรานั้นจะมีการจัดกิจกรรมขึ้นเรื่อยๆเพื่อเป็นการ เชื่อมความสัมพันธ์ระหว่างคนไทยในมหาลัย และ ชาติอื่นๆด้วยเช่นกัน หวังว่าทุกคนจะเข้ามาร่วมกิจกรรมของเราเยอะๆนะครับ สวัสดีครับ/ค่ะ
                 </Typography>
-                <Button variant="outlined" color="primary" size="large">View more about us</Button>
-            </Container>    
+                <Link to="/about" className={classes.link}>
+                    <Button variant="outlined" color="primary" size="large">View more about us</Button>
+                </Link>
+            </Container>
+            <div className={classes.section2}>
+            <Container maxWidth="md">
+
+                <Typography align="center" variant="h3" gutterBottom>
+                    Up Coming Event
+                </Typography>
+                <Grid container justifyContent="center">
+                    <Grid item >
+                        <img className={classes.eventImg} src={newEvent.img} />
+                    </Grid>
+                    <Grid item sm={12}>
+                    <Typography variant="h4">
+                        {newEvent.name}
+                    </Typography>
+                    </Grid>
+                    <Grid item sm={12}>
+                        <Typography variant="subtitle2">
+                            <EventIcon /> 27/8/2021 6PM
+                        </Typography>
+                    </Grid>
+                    <Grid item sm={12}>
+                        <Typography paragraph>
+                            {newEvent.description}
+                        </Typography>
+                    </Grid>
+                </Grid>
+
+                </Container>
+                </div>
             <Container className={classes.section} maxWidth="md">
                 <Typography variant="h3" align="center" gutterBottom>
-                    Our Events
+                    Calendar
                 </Typography> 
                 <Divider />
                 <Timeline align="alternate">

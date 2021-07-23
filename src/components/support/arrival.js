@@ -83,33 +83,26 @@ export default function Arrival() {
                         Get more information from <Link href="https://www.thetrainline.com" >TrainLine</Link>
                     </Typography>
                     <Grid container justifyContent="space-evenly" spacing={8} style={{marginTop: '1em'}}>
-                        <Grid item>
-                            <Typography variant="h5">
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
                                 Pros
                             </Typography>
+
+                            <Divider />
                             <List>
                                 <ListItem>
                                     <ListItemText>
                                         Cheap
                                     </ListItemText>
                                 </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Boring
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Boring
-                                    </ListItemText>
-                                </ListItem>
                             </List>
                         </Grid>
-                        <Grid item>
-                        <Typography variant="h5">
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
                                 Cons
                             </Typography>
-                            <List>
+                            <Divider />
+                            <List >
                                 <ListItem>
                                     <ListItemText>
                                         Need to carry laugage around 
@@ -152,6 +145,40 @@ export default function Arrival() {
                     <Typography align="center">
                         Get more information from <Link href="https://www.thetrainline.com/buses" >TrainLine-Bus</Link>
                     </Typography>
+                    <Grid container justifyContent="space-evenly" spacing={8} style={{marginTop: '1em'}}>
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
+                                Pros
+                            </Typography>
+
+                            <Divider />
+                            <List>
+                                <ListItem>
+                                    <ListItemText>
+                                        Doesn't need to carry luggage around
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
+                                Cons
+                            </Typography>
+                            <Divider />
+                            <List >
+                                <ListItem>
+                                    <ListItemText>
+                                        Takes alot of time
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Due to Covid-19, might be unsafe
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                    </Grid>
             </Paper>
             </Grid>
             <Grid item sm={12}>
@@ -179,6 +206,45 @@ export default function Arrival() {
                     <Typography align="center" variant="subtitle2">
                         Postcode: {city.taxi.postCode}
                     </Typography>
+                    <Grid container justifyContent="space-evenly" spacing={8} style={{marginTop: '1em'}}>
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
+                                Pros
+                            </Typography>
+
+                            <Divider />
+                            <List>
+                                <ListItem>
+                                    <ListItemText>
+                                        Straight to the Destination
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Fast
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Avoid people, safe during the covid-19 pandemic
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <Typography align="center" variant="h5">
+                                Cons
+                            </Typography>
+                            <Divider />
+                            <List >
+                                <ListItem>
+                                    <ListItemText>
+                                        Can be a little expensive if not traveling with friends
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                    </Grid>
                 </Paper>
             </Grid>
             </>
