@@ -33,6 +33,9 @@ const useStyle = makeStyles((theme) => ({
         top: '25%',
         left: '10%',
         fontWeight: 500,
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '5rem'
+          },
     }, 
     cardImg:{
         objectFit: 'cover',

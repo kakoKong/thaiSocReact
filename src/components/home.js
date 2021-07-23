@@ -7,12 +7,12 @@ import { Repeat } from '@material-ui/icons/';
 import EventIcon from '@material-ui/icons/Event';
 import { Carousel } from 'react-bootstrap';
 
-import cover7 from '../assets/cover7.jpg'
-import coverPhoto from '../assets/coverPhoto.jpg'
-import cover10 from '../assets/cover10.jpg'
+import cover7 from '../assets/cover7.jpg';
+import coverPhoto from '../assets/coverPhoto.jpg';
+import cover10 from '../assets/cover10.jpg';
 
-import { timeline } from '../data/home.js'
-import { newEvent } from '../data/newEvent.js'
+import { timeline } from '../data/home.js';
+import { newEvent } from '../data/newEvent.js';
 import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles((theme) => ({
@@ -33,7 +33,7 @@ const useStyle = makeStyles((theme) => ({
     },
     carouselText: {
         marginBottom: theme.spacing(2),
-        opacity: '100%'
+        opacity: '100%',
     },
     carouselImg:{
         width: '100%',
@@ -46,7 +46,10 @@ const useStyle = makeStyles((theme) => ({
         color: 'white'
     },
     paper: {
-        padding: '1em 2em',
+        padding: '1em 1em',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '12px'
+          },
       },
     divider: {
         color: 'pink',
@@ -81,7 +84,7 @@ const Home = () => {
                     />
                     <Carousel.Caption className={classes.carouselText}> 
                     <Typography variant="h3">Warwick Thai Society</Typography>
-                    <p>We bond, we drink, we dead</p>
+                    <p>We the best Thai Soc</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={classes.carousel} interval={5000}>
@@ -93,7 +96,9 @@ const Home = () => {
                     <Carousel.Caption className={classes.carouselText}>
                     <Typography variant="h3">Activities</Typography>
                     <p>Our past activities, how does it looks, LIT AF!!!</p>
-                    {/* <Button className={classes.button} variant="outlined" size="large">View more</Button> */}
+                    <Link className={classes.link} to="/events">
+                        <Button className={classes.button} variant="outlined" size="large">View Events</Button>
+                    </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={classes.carousel} interval={5000}>
@@ -104,9 +109,9 @@ const Home = () => {
                     />
                     <Carousel.Caption className={classes.carouselText}>
                     <Typography variant="h3">Support</Typography>
-                    <p>Which flight should you take? How do you transport to your accommodation? Where to buy stuff?</p>
+                    <p>Checklist-Arrival-QA</p>
                     <Link className={classes.link} to="/support">
-                        <Button className={classes.button} variant="outlined" size="large">Find more here</Button>
+                        <Button className={classes.button} variant="outlined" size="large">View Supports</Button>
                     </Link>
                     </Carousel.Caption>
                 </Carousel.Item>

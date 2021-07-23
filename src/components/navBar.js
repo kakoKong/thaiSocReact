@@ -132,12 +132,12 @@ export default function NavBar() {
                 <Link className={classes.link}>
                     Life
                 </Link>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem className={classes.item}>
-                <Link className={classes.link}>
+                <Link to="/events" className={classes.link}>
                     Events
                 </Link>
-            </MenuItem> */}
+            </MenuItem>
           </div>
         </Toolbar>
       </AppBar>

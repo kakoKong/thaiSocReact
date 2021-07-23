@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container, Typography, Grid } from '@material-ui/core/'
+import { Button, Container, Typography, Grid, IconButton } from '@material-ui/core/'
 import { Mail, Instagram, Facebook, Face } from '@material-ui/icons/';
 
 const useStyle = makeStyles((theme) => ({
@@ -24,12 +24,17 @@ const Footer = () => {
                 <Grid justifyContent="center" spacing={5} container>
                     <Grid item>
                         <Typography align="center">
-                            <Instagram fontSize="large" />
+                            <IconButton color="inherit" href="https://www.instagram.com/warwickthaisoc/" >
+                                
+                                <Instagram fontSize="large" />
+                            </IconButton>
                         </Typography>
                     </Grid>
                     <Grid item>
                         <Typography align="center">
-                            <Facebook fontSize="large" />
+                            <IconButton color="inherit" href="https://www.facebook.com/WarwickThaiSoc" >
+                                <Facebook fontSize="large" />
+                            </IconButton>
                         </Typography>
                     </Grid>
                     <Grid item sm={12}>

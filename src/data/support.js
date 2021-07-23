@@ -218,22 +218,28 @@ export const checkList = [
         name: 'Passport'
     },
     {
-        name: 'Visa'
+        name: 'Visa document'
     },
     {
-        name: 'IOM health check'
+        name: 'IOM check document'
     },
     {
         name: 'CAS letter'
     },
     {
-        name: 'Contact-less Debit/Credit Card'
+        name: 'Contactless Debit/Credit Card'
     },
     {
         name: 'Minimum 200 pounds in cash'
     },
     {
-        name: 'cool'
+        name: 'Sweater"'
+    },
+    {
+        name: 'Covid-19 test result'
+    },
+    {
+        name: 'Triam Jai <3'
     },
 ]
 
@@ -248,7 +254,7 @@ export const questions = [
     },
     {
         q: 'How much money should I prepare per week',
-        a: 'Excluding Accommodation fee, 150 pounds should be more than enough depending on your lifestyle'
+        a: 'Excluding Accommodation fee, £150 should be more than enough depending on your lifestyle'
     },
     {
         q: 'What is Thai Society',
@@ -262,5 +268,30 @@ export const questions = [
         q: 'Is the lecture hard?',
         a: 'Yes, I failed'
     },
+    {
+        q: 'How expensive is food there?',
+        a: 'Can be range from £7-£20, you better learn how to cook'
+    },
+    {
+        q: 'How should I find accommodation (for second year and above)',
+        a: 'There are plenty of accommodation choices where you can stay in student-accommodation, house, apartment, and more depending on your budget and preferred location. Try Searching google or look for real-estate agency nearby (There are plenty)'
+    },
+    {
+        q: 'How long does it takes to go to large city such as London/Birmingham',
+        a: 'London: around 1 hour, Birmingham: less than 30 minute'
+    },
+    {
+        q: 'What should I wear to lecture?',
+        a: "Anything is fine, just don't be naked"
+    },
+    {
+        q: "Is it hard to find friend?",
+        a: "No, people are very friendly here, but it depends on you lol"
+    },
+    {
+        q: 'How often do Thai Society meet each other',
+        a: "During the past years, we have a weekly sports where Thai Society members will come to play badminton/basketball together. As for other activities such as partying, monthly would be fair to say"
+    },
+
 
 ]
