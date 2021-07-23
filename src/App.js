@@ -7,7 +7,6 @@ import Home from './components/home';
 import About from './components/aboutUs'
 
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
-import { makeStyles } from '@material-ui/styles'
 
 import Footer from './components/footer';
 import Popup from './components/popup';

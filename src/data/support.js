@@ -233,7 +233,7 @@ export const checkList = [
         name: 'Minimum 200 pounds in cash'
     },
     {
-        name: 'Sweater"'
+        name: 'Sweater'
     },
     {
         name: 'Covid-19 test result'

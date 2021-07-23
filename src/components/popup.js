@@ -39,11 +39,11 @@ const useStyle = makeStyles((theme) => ({
 const Popup = (props) => {
     const classes = useStyle()
     return (props.trigger) ? (
-        <div className={classes.popUp}>
+        <div className={classes.popUp} onClick={() => props.setTrigger(false)}>
             
             <div className={classes.popItem}>
 
-                <IconButton className={classes.button} onClick={() => props.setTrigger(false)}><CloseIcon /></IconButton>
+                <IconButton className={classes.button} ><CloseIcon /></IconButton>
                 <img src={tam} className={classes.img} alt="" />
             </div>
         </div>
