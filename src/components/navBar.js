@@ -136,9 +136,6 @@ export default function NavBar() {
                 </Link>
             </MenuItem>
           </div>
-          <Typography align="right" variant="subtitle2">
-              @warwickThaiSoc
-          </Typography>
         </Toolbar>
       </AppBar>
     </div>

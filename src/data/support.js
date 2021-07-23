@@ -3,7 +3,7 @@ export const cities = [
         name: 'Coventry',
         description: 'YEHHHH',
         train : {
-            cost: '£20 - £35',
+            cost: '£35+',
             time: '2 hrs - 2 hrs 30 min',
             steps: [
                 {
@@ -28,7 +28,7 @@ export const cities = [
             ]
         },
         bus : {
-            cost: '£12 - £20',
+            cost: '£25+',
             time: '3 hrs - 4 hrs',
             steps: [
                 {
@@ -50,6 +50,7 @@ export const cities = [
         taxi : {
             cost: '£120 for 4 passengers',
             time: '1hr 30min - 2hrs',
+            postCode: 'CV1 4FQ',
             steps: [
                 {
                     number: 1,
@@ -120,6 +121,7 @@ export const cities = [
         taxi : {
             cost: '£130 for 4 passengers',
             time: '1hr 45min - 2hrs 15min',
+            postCode: 'CV4 7ES',
             steps: [
                 {
                     number: 1,
@@ -143,7 +145,7 @@ export const cities = [
         name: 'Leamington Spa',
         description: 'YEHHHH',
         train : {
-            cost: '£20 - £35',
+            cost: '£35+',
             time: '2 hrs - 2 hrs 30 min',
             steps: [
                 {
@@ -190,6 +192,7 @@ export const cities = [
         taxi : {
             cost: '£120 for 4 passengers',
             time: '1hr 30min - 2hrs',
+            postCode: 'CV31 2AU',
             steps: [
                 {
                     number: 1,

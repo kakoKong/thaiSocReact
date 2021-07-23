@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 
 import { cities } from '../../data/support'
-import { Typography, Grid, Paper, Divider } from '@material-ui/core';
+import { Typography, Grid, Paper, Divider, Link, List, ListItem, ListItemText } from '@material-ui/core';
 import TrainIcon from '@material-ui/icons/Train';
 import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 import LocalTaxiIcon from '@material-ui/icons/LocalTaxi';
@@ -78,6 +78,56 @@ export default function Arrival() {
                     <Typography align="center" variant="h5" gutterBottom>
                         {city.train.time}
                     </Typography>
+
+                    <Typography align="center" gutterBottom>
+                        Get more information from <Link href="https://www.thetrainline.com" >TrainLine</Link>
+                    </Typography>
+                    <Grid container justifyContent="space-evenly" spacing={8} style={{marginTop: '1em'}}>
+                        <Grid item>
+                            <Typography variant="h5">
+                                Pros
+                            </Typography>
+                            <List>
+                                <ListItem>
+                                    <ListItemText>
+                                        Cheap
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Boring
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Boring
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                        <Grid item>
+                        <Typography variant="h5">
+                                Cons
+                            </Typography>
+                            <List>
+                                <ListItem>
+                                    <ListItemText>
+                                        Need to carry laugage around 
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Many interchanges
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Due to Covid-19, might be unsafe
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                    </Grid>
                 </Paper>
             </Grid>
             <Grid item sm={12}>
@@ -99,6 +149,9 @@ export default function Arrival() {
                     <Typography align="center" variant="h5" gutterBottom>
                         {city.bus.time}
                     </Typography>
+                    <Typography align="center">
+                        Get more information from <Link href="https://www.thetrainline.com/buses" >TrainLine-Bus</Link>
+                    </Typography>
             </Paper>
             </Grid>
             <Grid item sm={12}>
@@ -119,6 +172,12 @@ export default function Arrival() {
                     </Typography>
                     <Typography align="center" variant="h5" gutterBottom>
                         {city.taxi.time}
+                    </Typography>
+                    <Typography align="center">
+                        Get more information from <Link href="https://www.expressairporttransport.co.uk" >Express Airport Transport</Link>
+                    </Typography>
+                    <Typography align="center" variant="subtitle2">
+                        Postcode: {city.taxi.postCode}
                     </Typography>
                 </Paper>
             </Grid>
