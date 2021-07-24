@@ -123,14 +123,14 @@ const Home = () => {
                 </Typography> 
                 <Divider />
                 <Typography paragraph>
-                Warwick Thai Society is a vibrant community of Thai students at the University of Warwick, Coventry, United Kingdom. T
-                here are multiple activities and events organised by us every year. Like our facebook page or follow our instagram to get the most updated
+                Warwick Thai Society is a vibrant community of Thai students at the University of Warwick, Coventry, United Kingdom. 
+                There are multiple activities and events organised by us every year. Like our facebook page or follow our instagram to get the most updated
                  events and keep in touch with your Thai friends. This official website is open for everyone! Please feel free to join us! Sawasdee ^/\^
                 </Typography>
                 <Typography paragraph>
-                สวัสดีครับ พวกเราคือ Warwick Thai Society หรือก็คือสมาคมคนไทยของมหาวิ
-                ทยาลัยWarwick ซึ่งตั้งอยู่ในเมือง Coventry, สหราชอาณา
-                จักร ในระหว่างปีการศึกษา พวกเรานั้นจะมีการจัดกิจกรรมขึ้นเรื่อยๆเพื่อเป็นการ เชื่อมความสัมพันธ์ระหว่างคนไทยในมหาลัย และ ชาติอื่นๆด้วยเช่นกัน หวังว่าทุกคนจะเข้ามาร่วมกิจกรรมของเราเยอะๆนะครับ สวัสดีครับ/ค่ะ
+                สวัสดีครับ พวกเราคือ Warwick Thai Society หรือก็คือสมาคมคนไทยของมหาวิทยาลัยWarwick 
+                ซึ่งตั้งอยู่ในเมือง Coventry, สหราชอาณาจักร ในระหว่างปีการศึกษา พวกเรานั้นจะมีการจัดกิจกรรมขึ้นเรื่อยๆเพื่อเป็นการ 
+                เชื่อมความสัมพันธ์ระหว่างคนไทยในมหาลัย และ ชาติอื่นๆด้วยเช่นกัน หวังว่าทุกคนจะเข้ามาร่วมกิจกรรมของเราเยอะๆนะครับ สวัสดีครับ/ค่ะ
                 </Typography>
                 <Link to="/about" className={classes.link}>
                     <Button variant="outlined" color="primary" size="large">View more about us</Button>
