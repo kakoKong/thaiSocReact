@@ -238,16 +238,9 @@ export const checkList = [
     {
         name: 'Covid-19 test result'
     },
-    {
-        name: 'Triam Jai <3'
-    },
 ]
 
 export const questions = [
-    {
-        q: 'Should I bring my own Pillows/blanket',
-        a: 'Ask your Accom'
-    },
     {
         q: 'Are there any part-time job',
         a: 'Yes, most of the Thai student usually did the part-time job at nearby restaurant'
@@ -257,20 +250,12 @@ export const questions = [
         a: 'Excluding Accommodation fee, £150 should be more than enough depending on your lifestyle'
     },
     {
-        q: 'What is Thai Society',
-        a: 'Read the god-damn description in about page'
-    },
-    {
         q: 'How many Thai Students are there',
         a: 'There are around 30 undergraduates and around 70+ postgraduate Thai student'
     },
     {
-        q: 'Is the lecture hard?',
-        a: 'Yes, I failed'
-    },
-    {
         q: 'How expensive is food there?',
-        a: 'Can be range from £7-£20, you better learn how to cook'
+        a: 'Can be range from £7-£20, depending on the restaurant'
     },
     {
         q: 'How should I find accommodation (for second year and above)',
@@ -278,15 +263,11 @@ export const questions = [
     },
     {
         q: 'How long does it takes to go to large city such as London/Birmingham',
-        a: 'London: around 1 hour, Birmingham: less than 30 minute'
-    },
-    {
-        q: 'What should I wear to lecture?',
-        a: "Anything is fine, just don't be naked"
+        a: 'London: around 1 hour | Birmingham: less than 30 minute'
     },
     {
         q: "Is it hard to find friend?",
-        a: "No, people are very friendly here, but it depends on you lol"
+        a: "No, people are very friendly here"
     },
     {
         q: 'How often do Thai Society meet each other',

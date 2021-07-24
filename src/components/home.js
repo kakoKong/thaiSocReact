@@ -95,7 +95,7 @@ const Home = () => {
                     />
                     <Carousel.Caption className={classes.carouselText}>
                     <Typography variant="h3">Activities</Typography>
-                    <p>Our past activities, how does it looks, LIT AF!!!</p>
+                    <p>Our past activities</p>
                     <Link className={classes.link} to="/events">
                         <Button className={classes.button} variant="outlined" size="large">View Events</Button>
                     </Link>
