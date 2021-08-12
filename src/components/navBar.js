@@ -128,11 +128,11 @@ export default function NavBar() {
                     Support
                 </Link>
             </MenuItem>
-            {/* <MenuItem className={classes.item}>
-                <Link className={classes.link}>
-                    Life
+            <MenuItem className={classes.item}>
+                <Link to="/lifestyle" className={classes.link}>
+                    LifeStyle
                 </Link>
-            </MenuItem> */}
+            </MenuItem>
             <MenuItem className={classes.item}>
                 <Link to="/events" className={classes.link}>
                     Events

@@ -9,7 +9,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import CommentIcon from '@material-ui/icons/Comment';
 
-import { checkList } from '../../data/support';
+import { packing } from '../../data/support';
 import { Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CheckList() {
+export default function Backpack() {
   const classes = useStyles();
   const [checked, setChecked] = React.useState([0]);
 
@@ -38,9 +38,9 @@ export default function CheckList() {
 
   return (
     <>
-    <Typography variant="h4">Arrival</Typography>
+    <Typography variant="h4">Things to Bring</Typography>
     <List className={classes.root}>
-      {checkList.map((value) => {
+      {packing.map((value) => {
         const labelId = `checkbox-list-label-${value.name}`;
 
         return (

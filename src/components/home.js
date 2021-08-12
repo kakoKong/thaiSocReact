@@ -70,11 +70,11 @@ const useStyle = makeStyles((theme) => ({
 
 const Home = () => {
 
-    const [show, setShow] = useState(false);
+    const [ loading, setLoad ] = useState(false);
     const classes = useStyle()
 
     return (
-        <div className={classes.root}>
+            <div className={classes.root}>
             <Carousel>
                 <Carousel.Item className={classes.carousel} interval={5000}>
                     <img
@@ -206,7 +206,8 @@ const Home = () => {
                 </Timeline>
             </Container>
         </div>
-    )
+        )
+
 }
 
 export default Home

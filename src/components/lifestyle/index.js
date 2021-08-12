@@ -5,16 +5,14 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-import coverAbout from '../../assets/coverAbout.jpg'
-import Arrival from './arrival'
-import CheckList from './checkList'
-import QA from './qa'
-import Backpack from './backpack';
+
+import coverEvent from '../../assets/library.jpg'
+import Restaurants from './restaurants';
+import Activities from './activities';
 
 const useStyle = makeStyles((theme) => ({
     root : {
         marginTop: theme.spacing(4),
-        marginBottom: theme.spacing(4)
     },
     root2:{
         backgroundColor: '#9B72AA',
@@ -47,9 +45,14 @@ const useStyle = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             display: 'none'
           },
-    }
+    },
+    carouselImg:{
+        width: '100%',
+        maxHeight: 500,
+        objectFit: 'cover',
+    },
 }))
-const Support = () => {
+const LifeStyle = () => {
     const classes = useStyle()
 
     useEffect(() => {
@@ -58,54 +61,31 @@ const Support = () => {
             once: true,
         })
     },[])
-
     return (
         <div>
              <div className={classes.coverSection}>
-                <img src={coverAbout} className={classes.coverImg} alt="cover"/>
+                <img src={coverEvent} className={classes.coverImg} alt="cover"/>
                 <Typography data-aos="fade-up" align="right" className={classes.coverText} variant="h1">
-                    Support
+                    Lifestyle
                     <Typography data-aos="fade-up" className={classes.subCoverText} variant="h4">
-                        Preparation, Arrival, Accommodation
+                        Activities - Restaurants
                     </Typography>
                 </Typography>
             </div>
-            <Container maxWidth="md" className={classes.root}>
-                <Typography variant="h3" gutterBottom>
-                    Before Departure
-                </Typography>
-                <Grid container justifyContent="center" spacing={4}>
-                    <Grid item sm={6}>
-                        <Paper style={{padding: '1em'}}>
-                         <CheckList />
-                        </Paper>
-                    </Grid>
-                    <Grid item sm={6}>
-                        <Paper style={{padding: '1em'}}>
-                         <Backpack />
-                        </Paper>
-                    </Grid>
-                </Grid>
-            </Container>
             <div className={classes.root}>
             <Container maxWidth="md" className={classes.container}>
-                <Typography variant="h3" gutterBottom>
-                    Arrival
-                </Typography>
-                <Typography variant="h5" gutterBottom>
-                    Select Your Accommodation's Location
-                </Typography>
-                <Arrival />
+                <Activities />
             </Container>
             </div>
-            <Container maxWidth="md" className={classes.root}>
-                <Typography variant="h3" gutterBottom>
-                    Frequently Asked Questions
-                </Typography>
-                <QA />
+            <div className={classes.root}>
+            <Container maxWidth="md" className={classes.container}>
+
+                <Restaurants/>
+                
             </Container>
+            </div>
         </div>
     )
 }
 
-export default Support
+export default LifeStyle

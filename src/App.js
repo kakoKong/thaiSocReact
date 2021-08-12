@@ -14,6 +14,7 @@ import Support from './components/support/support';
 import MobileMenu from './components/mobileNavbar';
 import ScrollToTop from './toTheTop';
 import Events from './components/events';
+import LifeStyle from './components/lifestyle';
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/support" component={Support}></Route>
+          <Route path="/lifestyle" component={LifeStyle}></Route>
           <Route path="/events" component={Events}></Route>
         </Switch>
         <Footer />

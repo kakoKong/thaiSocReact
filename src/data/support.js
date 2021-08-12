@@ -227,16 +227,34 @@ export const checkList = [
         name: 'CAS letter'
     },
     {
+        name: 'Fill in Passenger Locator Form'
+    },
+    {
+        name: 'Book a Covid Test for self-quarantine at UK'
+    },
+    {
+        name: 'Covid-19 test result from Thailand'
+    },
+]
+
+export const packing = [
+    {
+        name: 'Medicine (Make sure it is legal)'
+    },
+    {
+        name: 'Around 10 Sets of Clothes'
+    },
+    {
+        name: 'Sim card that is usable in UK'
+    },
+    {
         name: 'Contactless Debit/Credit Card'
     },
     {
-        name: 'Minimum 200 pounds in cash'
+        name: 'Cash (Around 200£ ++)'
     },
     {
-        name: 'Sweater'
-    },
-    {
-        name: 'Covid-19 test result'
+        name: 'Sweater or Jacket (It will be around 15°C at September)'
     },
 ]
 
