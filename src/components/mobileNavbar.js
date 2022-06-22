@@ -17,7 +17,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+import RestaurantIcon from '@material-ui/icons/Restaurant';
 import HomeIcon from '@material-ui/icons/Home';
 import HelpIcon from '@material-ui/icons/Help';
 import PeopleIcon from '@material-ui/icons/People';
@@ -163,6 +163,12 @@ export default function MobileMenu() {
                 <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon><HelpIcon /></ListItemIcon>
                 <ListItemText>Support</ListItemText>
+                </ListItem>
+            </Link>
+            <Link to="/lifeStyle" className={classes.link}>
+                <ListItem button onClick={handleDrawerClose}>
+                <ListItemIcon><RestaurantIcon /></ListItemIcon>
+                <ListItemText>LifeStyle</ListItemText>
                 </ListItem>
             </Link>
             <Link to="/events" className={classes.link}>

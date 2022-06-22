@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Button, Container, Typography, Paper, Divider, Grid } from '@material-ui/core/'
@@ -24,9 +24,9 @@ const useStyle = makeStyles((theme) => ({
     section2:{
         marginTop: theme.spacing(4),
         paddingTop: theme.spacing(2),
-        color: 'white',
-        backgroundColor: 'grey',
-        display: 'none'
+        color: 'grey',
+        backgroundColor: 'white',
+        // display: 'none'
     },
     carousel: {
         backgroundColor: 'black',
@@ -70,7 +70,6 @@ const useStyle = makeStyles((theme) => ({
 
 const Home = () => {
 
-    const [ loading, setLoad ] = useState(false);
     const classes = useStyle()
 
     return (
@@ -116,7 +115,35 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <div className={classes.section2}>
+            <Container maxWidth="md">
 
+                <Typography align="left" variant="h4" gutterBottom>
+                    Up Coming Event
+                </Typography>
+                <Grid container justifyContent="center">
+                    <Grid item >
+                        <img className={classes.eventImg} src={newEvent.img} alt="new Event"/>
+                    </Grid>
+                    <Grid item sm={12}>
+                    <Typography variant="h4">
+                        {newEvent.name}
+                    </Typography>
+                    </Grid>
+                    <Grid item sm={12}>
+                        <Typography variant="subtitle2">
+                            <EventIcon /> {newEvent.date}
+                        </Typography>
+                    </Grid>
+                    <Grid item sm={12}>
+                        <Typography paragraph>
+                            {newEvent.description}
+                        </Typography>
+                    </Grid>
+                </Grid>
+
+                </Container>
+                </div>
             <Container className={classes.section} maxWidth="md">
                 <Typography variant="h3" align="left" gutterBottom>
                     About Us
@@ -136,35 +163,7 @@ const Home = () => {
                     <Button variant="outlined" color="primary" size="large">View more about us</Button>
                 </Link>
             </Container>
-            <div className={classes.section2}>
-            <Container maxWidth="md">
-
-                <Typography align="center" variant="h3" gutterBottom>
-                    Up Coming Event
-                </Typography>
-                <Grid container justifyContent="center">
-                    <Grid item >
-                        <img className={classes.eventImg} src={newEvent.img} />
-                    </Grid>
-                    <Grid item sm={12}>
-                    <Typography variant="h4">
-                        {newEvent.name}
-                    </Typography>
-                    </Grid>
-                    <Grid item sm={12}>
-                        <Typography variant="subtitle2">
-                            <EventIcon /> 27/8/2021 6PM
-                        </Typography>
-                    </Grid>
-                    <Grid item sm={12}>
-                        <Typography paragraph>
-                            {newEvent.description}
-                        </Typography>
-                    </Grid>
-                </Grid>
-
-                </Container>
-                </div>
+            
             <Container className={classes.section} maxWidth="md">
                 <Typography variant="h3" align="center" gutterBottom>
                     Calendar

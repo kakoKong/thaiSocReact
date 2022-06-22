@@ -2,10 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
@@ -22,6 +20,9 @@ const useStyles = makeStyles({
   },
   container: {
     display: 'flex'
+  },
+  description: {
+    marginTop: 8
   }
 });
 
@@ -50,8 +51,8 @@ export default function Restaurants() {
                 <LocationOnIcon fontSize="small" color="primary"/>{restaurant.location}
               </Typography>
               
-              <Divider/>
-              <Typography align="center" gutterBottom variant="subtitle2">
+              <Divider gutterBottom/>
+              <Typography className={classes.description} align="center" gutterBottom variant="subtitle2" color="textSecondary">
                 {restaurant.type}
               </Typography>
               

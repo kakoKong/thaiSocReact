@@ -1,45 +1,59 @@
-import aug from '../assets/execs/aug.jpg'
-import sun from '../assets/execs/sun.jpg'
-import may from '../assets/execs/may.jpg'
-import nana from '../assets/execs/nana.jpg'
-import boom from '../assets/execs/boom.jpg'
+import tar from '../assets/execs/Tar.jpg'
+import anfield from '../assets/execs/Anfield.jpg'
+import prim from '../assets/execs/Prim.jpg'
+import ploy from '../assets/execs/Ploy.jpg'
+import miu from '../assets/execs/Miu.jpg'
+import tiger from '../assets/execs/Tiger.jpg'
 
 
 export const exec = [
     {
-        name: 'August',
-        fullName: 'Nahnath Phasuphong',
+        name: 'Tar',
+        fullName: 'Nithit Kongsuphol',
         position: 'Vice-President',
-        course: 'BSc Economics',
-        img: aug
+        course: 'BEng Systems Engineerin',
+        email: 'nithit.kongsuphol@warwick.ac.uk',
+        img: tar
     },
     {
-        name: 'Sun',
-        fullName: 'Yanisa Siripoorikan',
+        name: 'Anfield',
+        fullName: 'Pannavich Anchananon',
         position: 'Outreach',
-        course: 'Law LLB',
-        img: sun
+        course: 'BSc Management',
+        email: 'pannavich.anchananon@warwick.ac.uk',
+        img: anfield
     },
     {
-        name: 'May',
-        fullName: 'Ginipa Chiralerspong',
+        name: 'Prim',
+        fullName: ' Prim Malakul',
         position: 'Treasurer',
         course: 'BSc Accounting and Finance',
-        img: may
+        email: 'prim.malakul@warwick.ac.uk',
+        img: prim
     },
     {
-        name: 'Nana',
-        fullName: 'Sakuna Foontong',
+        name: 'Ploy',
+        fullName: 'Thiracha Kasemkiatsakul',
         position: 'Marketing',
-        course: 'BSc Management',
-        img: nana
+        course: 'BASc Global Sustainable Development and Business Studies',
+        email: 'ploy.kasemkiatsakul@warwick.ac.uk',
+        img: ploy
     },
     {
-        name: 'Boom',
-        fullName: 'Tanatip Timtong',
+        name: 'Miumiu',
+        fullName: 'Aonrumpa Assavatavawich',
         position: 'Operation',
-        course: 'BSc Computer Science',
-        img: boom
+        course: 'BSc Economics',
+        email: 'aonrumpa.assavatavawich@warwick.ac.uk',
+        img: miu
+    },
+    {
+        name: 'Tiger',
+        fullName: 'Pattarapon Intalap',
+        position: 'Operation',
+        course: 'BSc Economics',
+        email: 'tiger.intalap@warwick.ac.',
+        img: tiger
     }
 ]
 

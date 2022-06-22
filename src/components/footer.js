@@ -38,8 +38,8 @@ const Footer = () => {
                         </Typography>
                     </Grid>
                     <Grid item sm={12}>
-                        <Typography variant="subtitle2" align="center" >©2021 by Warwick Thai Society. All rights reserved.</Typography>
-                        <Typography variant="subtitle2" align="center" >Developed by Kaokong</Typography>
+                        <Typography variant="subtitle2" align="center" >©2022 by Warwick Thai Society. All rights reserved.</Typography>
+                        <Typography variant="subtitle2" align="center" >Developed by Pattarathon Nopwattanapong</Typography>
                     </Grid>
                 </Grid>
             </Container>

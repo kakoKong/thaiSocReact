@@ -6,8 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 import coverAbout2 from '../assets/coverAbout2.jpg'
-import tam from '../assets/execs/tam.jpeg'
+import ben from '../assets/execs/Ben.jpg'
 import { exec } from '../data/about'
+import { Mail } from '@material-ui/icons';
 
 const useStyle = makeStyles((theme) => ({
     root : {
@@ -40,12 +41,12 @@ const useStyle = makeStyles((theme) => ({
     cardImg:{
         objectFit: 'cover',
         width: '30%',
-        height: 450,
+        // height: '50%',
         
     },
     memberImg:{
-        width: 150,
-        height: 150,
+        width: '30%',
+        height: 200,
     },
     mainDetail:{
         display: 'flex',
@@ -67,6 +68,12 @@ const useStyle = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             display: 'none'
           },
+    },
+    email:{
+        color: 'grey',
+        textDecoration: 'none',
+        fontSize: '.8em',
+        padding: '0 0.5em'
     }
 }))
 
@@ -101,15 +108,15 @@ const About = () => {
                     events and keep in touch with your Thai friends. This official website is open for everyone! Please feel free to join us! Sawasdee ^/\^
                 </Typography>
                 <Typography paragraph>
-                    สวัสดีครับ พวกเราคือ Warwick Thai Society 
+                    สวัสดีค่ะ พวกเราคือ Warwick Thai Society 
                     หรือก็คือสมาคมคนไทยของมหาวิทยาลัยWarwick ซึ่งตั้งอยู่ในเมือง Coventry, สหราชอาณาจักร 
-                    ในระหว่างปีการศึกษา พวกเรานั้นจะมีการจัดกิจกรรมขึ้นเรื่อยๆเพื่อเป็นการ เชื่อมความสัมพันธ์ระหว่างคนไทยในมหาลัย และ ชาติอื่นๆด้วยเช่นกัน หวังว่าทุกคนจะเข้ามาร่วมกิจกรรมของเราเยอะๆนะครับ สวัสดีครับ/ค่ะ
+                    ในระหว่างปีการศึกษา พวกเรานั้นจะมีการจัดกิจกรรมขึ้นเรื่อยๆเพื่อเป็นการ เชื่อมความสัมพันธ์ระหว่างคนไทยในมหาลัย และ ชาติอื่นๆด้วยเช่นกัน หวังว่าทุกคนจะเข้ามาร่วมกิจกรรมของเราเยอะๆนะคะ สวัสดีครับ/ค่ะ
                 </Typography>
             </Container>
             <Divider style={{height: '2px', color: 'purple'}} variant="middle" />
             <Container maxWidth="md" className={classes.root}>
                 <Typography align="center" variant="h3" gutterBottom>
-                    Our Executives
+                    Our Executives 2022/23
                 </Typography>
                 <Grid justifyContent="center" spacing={6} container>
                     <Grid item sm={12}>
@@ -117,23 +124,26 @@ const About = () => {
                         <div className={classes.mainDetail}>
                             <CardContent className={classes.content}>
                                 <Typography component="h5" variant="h4">
-                                    Tam
+                                    Ben
                                 </Typography>
                                 <Typography variant="subtitle1" color="textSecondary">
-                                    Phudish Prateepamornkul
+                                    Benyapa Tassanawipas
                                 </Typography>
                                 <Divider style={{height: '3px', color: 'purple'}} />
                                 <Typography variant="h5" color="primary" gutterBottom>
                                     President
                                 </Typography>
                                 <Typography paragraph>
-                                Hello kub everyone, my name is Tam and I will be the president of this year Thai Society na kub. 
-                                This year might be different from other years due to the current situation of COVID-2019 , some activities might need to change according to the situation. However, 
-                                I promise that I will try my best to make sure that this year will be a memorable year for everyone na kub. 
+                                    <Mail/> <a className={classes.email} href="benyapa.tassanawipas@warwick.ac.uk">benyapa.tassanawipas@warwick.ac.uk</a>
                                 </Typography>
                                 <Typography paragraph>
-                                สวัสดีครับทุกคนผมชื่อแทมน่ะครับ และผมจะเป็น ประธาน สำหรับปีการศึกษานี้น่ะครับ ปีนี้อาจจะไม่ค่อยเหมือนปีก่อนๆ 
-                                เพราะสถานการของ COVID-2019 อาจจะทำให้ บางกิจกรรมต้องมีการเปลี่ยนแปลง แต่ ผมสัญญาว่าผมจะทำเต็มที่และพยายามให้ปีนี้เป็นปีที่สนุกของคนไทย ทุกๆคน น่ะครับ
+                                Hello everyone, my name is Ben and I will be the president of this year Thai Society na ka. 
+                                This year might be different from other years due to the current situation of COVID-2019 , some activities might need to change according to the situation. However, 
+                                I promise that I will try my best to make sure that this year will be a memorable year for everyone na ka. 
+                                </Typography>
+                                <Typography paragraph>
+                                สวัสดีครับทุกคน หนูชื่อเบนเป็น ประธาน สำหรับปีการศึกษานี้ค่ะ ปีนี้อาจจะไม่ค่อยเหมือนปีก่อนๆ 
+                                เพราะสถานการของ COVID-2019 อาจจะทำให้ บางกิจกรรมต้องมีการเปลี่ยนแปลง แต่ จะสัญญาว่าผมจะทำเต็มที่และพยายามให้ปีนี้เป็นปีที่สนุกของคนไทย ทุกๆคน นะคะ
                                 </Typography>
                                 </CardContent>
                             </div>
@@ -141,7 +151,7 @@ const About = () => {
                                 className={classes.cardImg}
                                 component="img"
                                 alt="Contemplative Reptile"
-                                image={tam}
+                                image={ben}
                                 title="Contemplative Reptile"
                                 />
                             </Card>
@@ -160,6 +170,11 @@ const About = () => {
                                     <Divider/>
                                     <Typography variant="subtitle1" color="primary" gutterBottom>
                                         {member.position}
+                                    </Typography>
+                                    <Typography paragraph>
+                                        <Mail/>
+                                        <a className={classes.email} href={member.email}>{member.email}</a>
+                                        
                                     </Typography>
                                     </CardContent>
                             </div>

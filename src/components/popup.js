@@ -1,10 +1,11 @@
-import { Button, Typography, IconButton } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import CloseIcon from '@material-ui/icons/Close';
 
 import React from 'react'
 
-import tam from '../assets/tam.JPG'
+import tam from '../assets/popup.jpg'
+
 const useStyle = makeStyles((theme) => ({
     popUp: {
         position: 'fixed',
@@ -25,8 +26,8 @@ const useStyle = makeStyles((theme) => ({
         backgroundColor: 'inherit',
     },
     img: {
-        height: '400px',
-        width: '400px'
+        height: 'auto',
+        width: '100%'
     },
     button: {
         position: 'absolute',

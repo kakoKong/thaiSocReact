@@ -50,7 +50,7 @@ function App() {
           <Route path="/events" component={Events}></Route>
         </Switch>
         <Footer />
-        {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup> */}
+        <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
       </ThemeProvider>
     </Router>
   );

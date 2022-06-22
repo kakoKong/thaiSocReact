@@ -242,6 +242,9 @@ export const packing = [
         name: 'Medicine (Make sure it is legal)'
     },
     {
+        name: 'Mask'
+    },
+    {
         name: 'Around 10 Sets of Clothes'
     },
     {
@@ -251,7 +254,7 @@ export const packing = [
         name: 'Contactless Debit/Credit Card'
     },
     {
-        name: 'Cash (Around 200£ ++)'
+        name: 'Cash (Around £250+)'
     },
     {
         name: 'Sweater or Jacket (It will be around 15°C at September)'
