@@ -41,7 +41,7 @@ const useStyle = makeStyles((theme) => ({
     cardImg:{
         objectFit: 'cover',
         width: '30%',
-        // height: '50%',
+        maxHeight: 500,
         
     },
     memberImg:{
